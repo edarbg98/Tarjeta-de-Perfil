@@ -23,7 +23,6 @@ input {
     position: relative;
     background: none;
     border-style: none;
-    box-shadow: 5px 5px 0;
     padding: 10px;
     top: 200px;
     transition: box-shadow, 1.5s ease-in-out;
@@ -40,7 +39,6 @@ input:hover {
 button {
     background: none;
     border-style: none;
-    box-shadow: 5px 5px 0;
     padding: 10px;
     top: 30px;
     transition: box-shadow, 1.5s ease-in-out;
