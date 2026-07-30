@@ -1,0 +1,158 @@
+* {
+    font-family: monospace;
+    text-align: center;
+    color: #696969;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    background: -webkit-linear-gradient(90deg, #d7b679,#ddd4c3,#d7b679);
+    background: linear-gradient(90deg, #d7b679,#ddd4c3,#d7b679);
+}
+
+h1 {
+    position: relative;
+    top: 180px;
+}
+
+input {
+    position: relative;
+    background: none;
+    border-style: none;
+    box-shadow: 5px 5px 0;
+    padding: 10px;
+    top: 200px;
+}
+
+button {
+    background: none;
+    border-style: none;
+    box-shadow: 5px 5px 0;
+    padding: 10px;
+    top: 30px;
+}
+
+#linea {
+    position: relative;
+    left: -50px;
+    top: 300px;
+}
+
+#desconectado {
+    position: relative;
+    left: -25px;
+    top: 300px;
+}
+
+h4 {
+    position: absolute;
+    top: 50px;
+    left: 1100px;
+}
+
+#sumar {
+    position: relative;
+    top: 200px;
+    left: 50px;
+}
+
+#restar {
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+h2 {
+    position: relative;
+    top: -50px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    h1,
+    input,
+    #sumar,
+    #restar,
+    #linea,
+    #desconectado,
+    h2,
+    h4 {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    h1 {
+        margin: 0 0 16px;
+        font-size: 1.6rem;
+    }
+
+    input {
+        width: min(100%, 320px);
+        margin: 0 0 12px;
+    }
+
+    h2 {
+        margin: 8px 0;
+        font-size: 1.2rem;
+    }
+
+    button {
+        margin: 8px 6px 0;
+        min-width: 100px;
+    }
+
+    #sumar,
+    #restar,
+    #linea,
+    #desconectado {
+        margin-top: 10px;
+    }
+
+    h4 {
+        margin: 16px 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px 12px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    input,
+    button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    button {
+        min-width: 0;
+    }
+
+    #sumar,
+    #restar,
+    #linea,
+    #desconectado {
+        display: block;
+        margin: 8px auto 0;
+    }
+}
