@@ -26,6 +26,7 @@ input {
     box-shadow: 5px 5px 0;
     padding: 10px;
     top: 200px;
+    transition: box-shadow, 1.5s ease-in-out;
 }
 
 input:focus {
